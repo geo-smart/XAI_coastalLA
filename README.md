@@ -22,4 +22,17 @@ Data Preparation is conducted primarily in the ESIP_preprocessing.ipynb file. Ot
 
 ### Hyperparameter Tuning
 
-The only example of hyperparameter tuning comes in the 
+The only example of hyperparameter tuning arises in the proof that the Regularized linear regression from both a Bayesian and Frequentist framework find the same solution. Here, we using hyperparamter tuing to find the optimal value for $\lambda$ in the Frequentist regularized linear regression. 
+
+### Model training
+
+We first train and implement our Bayesian Linear Regression model, analyze the results, then train the Gaussian Process Regression model. We do this using the scikit-learn python library. 
+
+### Performance Evlaution
+
+Performance Evaluation for both the Bayesian Linear Regression and the Gaussian Process Regression is done using repeated k-fold cross validation. For the Bayesian Linear Regression we use our own repeated k-fold cross validation and plotting function, while for the GPR we use an easy to implement repeated k-fold cross validation method from scikit learn. 
+
+### Conclusion
+
+We conduct a machine learning experiment in which we test if a nonlinear model, the Gaussian Process Regression, will work as a better approximator for accretion than a baseline linear model, the Bayesian Lienar Regression. 
+
